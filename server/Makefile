@@ -10,7 +10,7 @@ CROSS_COMPILE ?=
 CC ?= $(CROSS_COMPILE)gcc
 
 CFLAGS ?= -Wall -Wextra -Werror -g -O0
-LDFLAGS ?=
+LDFLAGS ?= -lpthread
 
 TARGET := aesdsocket
 SRCS := aesdsocket.c
